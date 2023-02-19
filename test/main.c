@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 #include "qsim.h"
 
 int main() {
@@ -41,6 +42,7 @@ int main() {
 
     // Print the final position of the particle
     printf("Final position: (%f, %f)\n", p->x, p->y);
+    printf("Final Rounded Position: (%f, %f)\n", round(p->x), round(p->y));
 
     // Destroy the particle and force
     particle_destroy(p);
